@@ -4,7 +4,7 @@ import path from 'path';
 import { load } from '@pspdfkit/nodejs';
 
 // Call this like:
-// curl -X POST http://localhost:3000/convert \
+// curl -X POST http://localhost:3000/api/convert \
 //   -H "Content-Type: application/json" \
 //   -d '{"filename": "resume.docx"}'
 
