@@ -12,6 +12,11 @@ const nextConfig = {
       config.externals.push('@pspdfkit/nodejs');
     }
     return config;
+  },
+  experimental: {
+    outputFileTracingIncludes: {
+      '/api/**/*': ['node_modules/.pnpm/@pspdfkit+nodejs@0.0.5/node_modules/@pspdfkit/nodejs/**/*'],
+    },
   }
 };
 
