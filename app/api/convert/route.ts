@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
-import * as nodeFs from "node:fs";
+// import * as nodeFs from "node:fs";
 import path from "path";
 import { load } from "@pspdfkit/nodejs";
 
