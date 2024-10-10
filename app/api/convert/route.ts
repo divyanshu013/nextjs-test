@@ -10,56 +10,56 @@ import { load } from "@pspdfkit/nodejs";
 //   -d '{"filename": "resume.docx"}'
 
 export async function POST(req: NextRequest) {
-  nodeFs.readdirSync(
-    path.join(process.cwd(), "node_modules", "@pspdfkit", "nodejs", "vendor")
-  );
-  nodeFs.readdirSync(
-    path.join(
-      process.cwd(),
-      "node_modules",
-      "@pspdfkit",
-      "nodejs",
-      "vendor",
-      "gdpicture",
-      "aot"
-    )
-  );
-  nodeFs.readdirSync(
-    path.join(
-      process.cwd(),
-      "node_modules",
-      "@pspdfkit",
-      "nodejs",
-      "vendor",
-      "gdpicture",
-      "aot",
-      "managed"
-    )
-  );
-  nodeFs.readdirSync(
-    path.join(
-      process.cwd(),
-      "node_modules",
-      "@pspdfkit",
-      "nodejs",
-      "vendor",
-      "gdpicture",
-      "aot",
-      "resources"
-    )
-  );
-  nodeFs.readdirSync(
-    path.join(
-      process.cwd(),
-      "node_modules",
-      "@pspdfkit",
-      "nodejs",
-      "vendor",
-      "gdpicture",
-      "aot",
-      "supportFiles"
-    )
-  );
+  // nodeFs.readdirSync(
+  //   path.join(process.cwd(), "node_modules", "@pspdfkit", "nodejs", "vendor")
+  // );
+  // nodeFs.readdirSync(
+  //   path.join(
+  //     process.cwd(),
+  //     "node_modules",
+  //     "@pspdfkit",
+  //     "nodejs",
+  //     "vendor",
+  //     "gdpicture",
+  //     "aot"
+  //   )
+  // );
+  // nodeFs.readdirSync(
+  //   path.join(
+  //     process.cwd(),
+  //     "node_modules",
+  //     "@pspdfkit",
+  //     "nodejs",
+  //     "vendor",
+  //     "gdpicture",
+  //     "aot",
+  //     "managed"
+  //   )
+  // );
+  // nodeFs.readdirSync(
+  //   path.join(
+  //     process.cwd(),
+  //     "node_modules",
+  //     "@pspdfkit",
+  //     "nodejs",
+  //     "vendor",
+  //     "gdpicture",
+  //     "aot",
+  //     "resources"
+  //   )
+  // );
+  // nodeFs.readdirSync(
+  //   path.join(
+  //     process.cwd(),
+  //     "node_modules",
+  //     "@pspdfkit",
+  //     "nodejs",
+  //     "vendor",
+  //     "gdpicture",
+  //     "aot",
+  //     "supportFiles"
+  //   )
+  // );
 
   try {
     const { filename } = await req.json();
