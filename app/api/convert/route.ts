@@ -9,58 +9,58 @@ import { load } from "@pspdfkit/nodejs";
 //   -H "Content-Type: application/json" \
 //   -d '{"filename": "resume.docx"}'
 
-nodeFs.readdirSync(
-  path.join(process.cwd(), "node_modules", "@pspdfkit", "nodejs", "vendor")
-);
-nodeFs.readdirSync(
-  path.join(
-    process.cwd(),
-    "node_modules",
-    "@pspdfkit",
-    "nodejs",
-    "vendor",
-    "gdpicture",
-    "aot"
-  )
-);
-nodeFs.readdirSync(
-  path.join(
-    process.cwd(),
-    "node_modules",
-    "@pspdfkit",
-    "nodejs",
-    "vendor",
-    "gdpicture",
-    "aot",
-    "managed"
-  )
-);
-nodeFs.readdirSync(
-  path.join(
-    process.cwd(),
-    "node_modules",
-    "@pspdfkit",
-    "nodejs",
-    "vendor",
-    "gdpicture",
-    "aot",
-    "resources"
-  )
-);
-nodeFs.readdirSync(
-  path.join(
-    process.cwd(),
-    "node_modules",
-    "@pspdfkit",
-    "nodejs",
-    "vendor",
-    "gdpicture",
-    "aot",
-    "supportFiles"
-  )
-);
-
 export async function POST(req: NextRequest) {
+  nodeFs.readdirSync(
+    path.join(process.cwd(), "node_modules", "@pspdfkit", "nodejs", "vendor")
+  );
+  nodeFs.readdirSync(
+    path.join(
+      process.cwd(),
+      "node_modules",
+      "@pspdfkit",
+      "nodejs",
+      "vendor",
+      "gdpicture",
+      "aot"
+    )
+  );
+  nodeFs.readdirSync(
+    path.join(
+      process.cwd(),
+      "node_modules",
+      "@pspdfkit",
+      "nodejs",
+      "vendor",
+      "gdpicture",
+      "aot",
+      "managed"
+    )
+  );
+  nodeFs.readdirSync(
+    path.join(
+      process.cwd(),
+      "node_modules",
+      "@pspdfkit",
+      "nodejs",
+      "vendor",
+      "gdpicture",
+      "aot",
+      "resources"
+    )
+  );
+  nodeFs.readdirSync(
+    path.join(
+      process.cwd(),
+      "node_modules",
+      "@pspdfkit",
+      "nodejs",
+      "vendor",
+      "gdpicture",
+      "aot",
+      "supportFiles"
+    )
+  );
+
   try {
     const { filename } = await req.json();
 
